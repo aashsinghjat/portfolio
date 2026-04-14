@@ -14,19 +14,20 @@ export default function Profile() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="relative"
+          className="relative max-w-[400px] mx-auto md:mx-0"
         >
-          <div className="relative aspect-[3/4] max-w-[400px] mx-auto md:mx-0 rounded-2xl overflow-hidden border-2 border-foreground/20">
+          <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-foreground/20">
             <Image
               src="/profile-photo.jpg"
               alt={personalInfo.name}
               fill
-              className="object-cover"
+              className="object-cover object-center"
               priority
+              sizes="(max-width: 768px) 100vw, 400px"
             />
           </div>
           {/* Decorative border accent */}
-          <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-foreground/10 rounded-2xl -z-10" />
+          <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-foreground/10 rounded-2xl -z-10 pointer-events-none" />
         </motion.div>
 
         {/* Content - Animates from right */}

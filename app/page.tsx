@@ -54,7 +54,7 @@ export default function Home() {
       <Navigation />
 
       {/* Main content */}
-      <main className="relative z-[100]">
+      <main className="relative z-10">
         <Hero />
         <ProjectCarousel />
         <Experience />

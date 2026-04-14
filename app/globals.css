@@ -34,25 +34,27 @@
 
 .custom-cursor {
   position: fixed;
-  width: 8px;
-  height: 8px;
-  background: rgb(var(--foreground));
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   transition: transform 0.15s ease-out;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .custom-cursor-ring {
   position: fixed;
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgb(var(--foreground) / 0.3);
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9998;
-  transition: transform 0.2s ease-out;
+  transition: transform 0.25s ease-out;
   backdrop-filter: blur(2px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 /* Reduced motion support */
