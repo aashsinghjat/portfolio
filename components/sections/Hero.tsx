@@ -21,15 +21,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg leading-relaxed mb-8 max-w-[600px]"
+          className="text-lg text-foreground-secondary leading-relaxed mb-8 max-w-[600px]"
         >
-          <span className="text-accent-cyan font-bold">7+ years</span>{" "}
-          <span className="text-foreground-secondary">building scalable, high-performance web applications with</span>{" "}
-          <span className="text-accent-cyan">Next.js</span>
-          <span className="text-foreground-secondary">,</span>{" "}
-          <span className="text-accent-cyan">Vue.js</span>
-          <span className="text-foreground-secondary">, and</span>{" "}
-          <span className="text-accent-cyan">React</span>
+          <span className="text-accent-cyan font-bold">7+ years</span> building scalable, high-performance web applications with Next.js, Vue.js, and React
         </motion.p>
 
         <motion.div
@@ -41,7 +35,7 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="rounded-full px-8 border-accent-cyan text-accent-cyan hover:bg-accent-cyan/10 hover:shadow-[0_0_20px_rgba(0,217,255,0.3)] transition-all"
+            className="rounded-full px-8 border-border-accent text-foreground hover:bg-border-primary hover:border-accent-cyan transition-all"
             asChild
           >
             <a href="#projects">View Projects</a>
