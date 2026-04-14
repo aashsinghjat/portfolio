@@ -6,7 +6,6 @@ import MouseGradient from "@/components/background/MouseGradient";
 import ParticleSystem from "@/components/background/ParticleSystem";
 import BubbleEffect from "@/components/background/BubbleEffect";
 import ShootingStars from "@/components/background/ShootingStars";
-import GalaxyTexture from "@/components/background/GalaxyTexture";
 import GrainOverlay from "@/components/background/GrainOverlay";
 
 // UI components
@@ -48,7 +47,6 @@ export default function Home() {
       <CustomCursor />
 
       {/* Background layers */}
-      <GalaxyTexture />
       <AnimatedMesh />
       <MouseGradient />
       <ParticleSystem />
