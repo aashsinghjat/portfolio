@@ -12,7 +12,7 @@ import Hero from "@/components/sections/Hero";
 import ProjectCarousel from "@/components/sections/ProjectCarousel";
 import Experience from "@/components/sections/Experience";
 import Testimonials from "@/components/sections/Testimonials";
-import About from "@/components/sections/About";
+import Profile from "@/components/sections/Profile";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
 
@@ -53,7 +53,7 @@ export default function Home() {
         <ProjectCarousel />
         <Experience />
         <Testimonials />
-        <About />
+        <Profile />
         <Skills />
         <Contact />
       </main>

@@ -31,6 +31,12 @@ export default function Navigation() {
             experience
           </button>
           <button
+            onClick={() => scrollToSection('profile')}
+            className="hover:text-foreground transition-colors duration-200 cursor-pointer"
+          >
+            about
+          </button>
+          <button
             onClick={() => scrollToSection('skills')}
             className="hover:text-foreground transition-colors duration-200 cursor-pointer"
           >
