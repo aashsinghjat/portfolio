@@ -4,26 +4,36 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { skills } from '@/lib/data';
 
-// Skill icon mapping - using emojis for simplicity
+// Skill icon mapping - using SimpleIcons CDN
 const skillIcons: Record<string, string> = {
-  'React.js': '⚛️',
-  'Next.js': '▲',
-  'TypeScript': '🔷',
-  'JavaScript (ES6+)': '💛',
-  'HTML5': '🌐',
-  'CSS3': '🎨',
-  'Vue.js': '💚',
-  'Angular': '🅰️',
-  'Node.js': '🟢',
-  'PostgreSQL': '🐘',
-  'Jest': '🃏',
-  'Git': '🔀',
-  'Azure': '☁️',
-  'REST APIs': '🔌',
-  'Performance Optimization': '⚡',
-  'Redux': '🔄',
-  'Docker': '🐳',
-  'Default': '✨'
+  'React.js': 'https://cdn.simpleicons.org/react',
+  'Next.js': 'https://cdn.simpleicons.org/nextdotjs',
+  'TypeScript': 'https://cdn.simpleicons.org/typescript',
+  'JavaScript (ES6+)': 'https://cdn.simpleicons.org/javascript',
+  'HTML5': 'https://cdn.simpleicons.org/html5',
+  'CSS3': 'https://cdn.simpleicons.org/css3',
+  'SCSS': 'https://cdn.simpleicons.org/sass',
+  'Vue.js': 'https://cdn.simpleicons.org/vuedotjs',
+  'Angular': 'https://cdn.simpleicons.org/angular',
+  'Node.js': 'https://cdn.simpleicons.org/nodedotjs',
+  'PostgreSQL': 'https://cdn.simpleicons.org/postgresql',
+  'Jest': 'https://cdn.simpleicons.org/jest',
+  'Git': 'https://cdn.simpleicons.org/git',
+  'Azure': 'https://cdn.simpleicons.org/microsoftazure',
+  'Redux': 'https://cdn.simpleicons.org/redux',
+  'Vuex': 'https://cdn.simpleicons.org/vuedotjs',
+  'Prisma ORM': 'https://cdn.simpleicons.org/prisma',
+  'Firebase': 'https://cdn.simpleicons.org/firebase',
+  'Docker': 'https://cdn.simpleicons.org/docker',
+  'GitHub Copilot': 'https://cdn.simpleicons.org/github',
+  'VS Code': 'https://cdn.simpleicons.org/visualstudiocode',
+  'Postman': 'https://cdn.simpleicons.org/postman',
+  'Jira': 'https://cdn.simpleicons.org/jira',
+  'Tailwind CSS': 'https://cdn.simpleicons.org/tailwindcss',
+  'GraphQL': 'https://cdn.simpleicons.org/graphql',
+  'REST APIs': 'https://cdn.simpleicons.org/fastapi',
+  'GCP': 'https://cdn.simpleicons.org/googlecloud',
+  'Default': 'https://cdn.simpleicons.org/dev.to'
 };
 
 const getSkillIcon = (skillName: string) => {
@@ -136,8 +146,12 @@ export default function SolarSystem() {
                   className="group relative -translate-x-1/2 -translate-y-1/2"
                 >
                   <div className="relative bg-[#111111] border border-accent-cyan/40 rounded-full p-4 hover:border-accent-cyan hover:scale-110 transition-all duration-300 cursor-pointer">
-                    <div className="w-12 h-12 flex items-center justify-center text-2xl">
-                      {getSkillIcon(skill.name)}
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img
+                        src={getSkillIcon(skill.name)}
+                        alt={skill.name}
+                        className="w-8 h-8 object-contain brightness-0 invert opacity-90"
+                      />
                     </div>
 
                     {/* Skill label */}
@@ -195,8 +209,12 @@ export default function SolarSystem() {
                   className="group relative -translate-x-1/2 -translate-y-1/2"
                 >
                   <div className="relative bg-[#111111] border border-border-accent rounded-full p-3 hover:border-accent-cyan/60 hover:scale-110 transition-all duration-300 cursor-pointer">
-                    <div className="w-8 h-8 flex items-center justify-center text-lg">
-                      {getSkillIcon(skill.name)}
+                    <div className="w-8 h-8 flex items-center justify-center">
+                      <img
+                        src={getSkillIcon(skill.name)}
+                        alt={skill.name}
+                        className="w-6 h-6 object-contain brightness-0 invert opacity-80"
+                      />
                     </div>
 
                     {/* Skill label */}
