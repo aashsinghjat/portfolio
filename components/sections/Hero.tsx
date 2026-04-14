@@ -12,11 +12,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6 leading-tight"
+          className="text-4xl md:text-5xl lg:text-6xl font-normal text-foreground mb-6 leading-tight"
         >
-          <span className="text-foreground">Senior </span>
-          <span className="text-accent-cyan">Frontend</span>
-          <span className="text-foreground"> Developer</span>
+          {personalInfo.title}
         </motion.h1>
 
         <motion.p

@@ -76,13 +76,13 @@ export default function Profile() {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex flex-wrap gap-4 pt-4"
           >
-            <div className="flex items-center gap-2 text-sm text-foreground-tertiary">
-              <span className="text-foreground">📍</span>
-              {personalInfo.location}
+            <div className="flex items-center gap-2 text-sm">
+              <span>📍</span>
+              <span className="text-accent-cyan">{personalInfo.location}</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-foreground-tertiary">
-              <span className="text-foreground">💼</span>
-              {personalInfo.tagline.split(' ')[0]} years experience
+            <div className="flex items-center gap-2 text-sm">
+              <span>💼</span>
+              <span className="text-accent-cyan">{personalInfo.tagline.split(' ')[0]} years experience</span>
             </div>
           </motion.div>
         </motion.div>

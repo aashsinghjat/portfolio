@@ -46,7 +46,7 @@ export default function ProjectCarousel() {
             </div>
 
             {/* Project title */}
-            <h3 className="text-2xl md:text-3xl font-semibold text-accent-cyan mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
               {currentProject.title}
             </h3>
 
@@ -56,7 +56,7 @@ export default function ProjectCarousel() {
             </p>
 
             {/* Impact metrics */}
-            <div className="text-sm text-foreground-tertiary mb-6">
+            <div className="text-sm text-accent-cyan/80 font-medium mb-6">
               {currentProject.impact}
             </div>
 

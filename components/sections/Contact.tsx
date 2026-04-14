@@ -7,7 +7,7 @@ import { personalInfo } from '@/lib/data';
 export default function Contact() {
   return (
     <section id="contact" className="max-w-[700px] mx-auto px-6 py-24 text-center scroll-mt-20">
-      <h2 className="text-2xl md:text-3xl font-semibold text-accent-cyan mb-4">
+      <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
         Let&apos;s Connect
       </h2>
 
