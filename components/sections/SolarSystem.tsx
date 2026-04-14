@@ -3,77 +3,115 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { skills } from '@/lib/data';
+import { IconType } from 'react-icons';
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiSass,
+  SiTailwindcss,
+  SiGooglechrome,
+  SiStorybook,
+  SiLighthouse,
+  SiWebpack,
+  SiRedux,
+  SiVuedotjs,
+  SiAngular,
+  SiOpenai,
+  SiGithubcopilot,
+  SiVisualstudiocode,
+  SiMicrosoftazure,
+  SiNodedotjs,
+  SiSwagger,
+  SiPostgresql,
+  SiPrisma,
+  SiPostman,
+  SiJest,
+  SiTestinglibrary,
+  SiVitest,
+  SiEslint,
+  SiGooglecloud,
+  SiFirebase,
+  SiGithubactions,
+  SiPwa,
+  SiDocker,
+  SiGit,
+  SiJira,
+} from 'react-icons/si';
 
-// Skill icon mapping - using SimpleIcons CDN
-const skillIcons: Record<string, string> = {
+// Skill icon mapping - using react-icons
+const skillIcons: Record<string, IconType> = {
   // Primary Frontend
-  'React.js': 'https://cdn.simpleicons.org/react/00D9FF',
-  'Next.js': 'https://cdn.simpleicons.org/nextdotjs/00D9FF',
-  'TypeScript': 'https://cdn.simpleicons.org/typescript/00D9FF',
-  'JavaScript (ES6+)': 'https://cdn.simpleicons.org/javascript/00D9FF',
-  'HTML5': 'https://cdn.simpleicons.org/html5/00D9FF',
-  'CSS3': 'https://cdn.simpleicons.org/css3/00D9FF',
+  'React.js': SiReact,
+  'Next.js': SiNextdotjs,
+  'TypeScript': SiTypescript,
+  'JavaScript (ES6+)': SiJavascript,
+  'HTML5': SiHtml5,
+  'CSS3': SiCss3,
 
   // Styling & Design
-  'SCSS': 'https://cdn.simpleicons.org/sass/00D9FF',
-  'Tailwind CSS': 'https://cdn.simpleicons.org/tailwindcss/00D9FF',
-  'Responsive Design': 'https://cdn.simpleicons.org/googlechrome/00D9FF',
-  'Design Systems': 'https://cdn.simpleicons.org/storybook/00D9FF',
-  'Accessibility (WCAG)': 'https://cdn.simpleicons.org/a11yproject/00D9FF',
+  'SCSS': SiSass,
+  'Tailwind CSS': SiTailwindcss,
+  'Responsive Design': SiGooglechrome,
+  'Design Systems': SiStorybook,
+  'Accessibility (WCAG)': SiStorybook,
 
   // Performance
-  'Performance Optimization': 'https://cdn.simpleicons.org/lighthouse/00D9FF',
-  'Core Web Vitals': 'https://cdn.simpleicons.org/pagespeedinsights/00D9FF',
-  'SSR/SSG': 'https://cdn.simpleicons.org/nextdotjs/00D9FF',
-  'Code Splitting': 'https://cdn.simpleicons.org/webpack/00D9FF',
-  'Lazy Loading': 'https://cdn.simpleicons.org/webpack/00D9FF',
-  'Bundle Optimization': 'https://cdn.simpleicons.org/webpack/00D9FF',
+  'Performance Optimization': SiLighthouse,
+  'Core Web Vitals': SiGooglechrome,
+  'SSR/SSG': SiNextdotjs,
+  'Code Splitting': SiWebpack,
+  'Lazy Loading': SiWebpack,
+  'Bundle Optimization': SiWebpack,
 
   // State Management
-  'Redux': 'https://cdn.simpleicons.org/redux/00D9FF',
-  'Context API': 'https://cdn.simpleicons.org/react/00D9FF',
-  'Vuex': 'https://cdn.simpleicons.org/vuedotjs/00D9FF',
-  'Vue.js': 'https://cdn.simpleicons.org/vuedotjs/00D9FF',
-  'Angular': 'https://cdn.simpleicons.org/angular/00D9FF',
+  'Redux': SiRedux,
+  'Context API': SiReact,
+  'Vuex': SiVuedotjs,
+  'Vue.js': SiVuedotjs,
+  'Angular': SiAngular,
 
   // AI & Modern Dev
-  'AI-assisted Development': 'https://cdn.simpleicons.org/openai/00D9FF',
-  'Cursor': 'https://cdn.simpleicons.org/visualstudiocode/00D9FF',
-  'GitHub Copilot': 'https://cdn.simpleicons.org/githubcopilot/00D9FF',
-  'Azure AI SDK': 'https://cdn.simpleicons.org/microsoftazure/00D9FF',
-  'Prompt Engineering': 'https://cdn.simpleicons.org/openai/00D9FF',
+  'AI-assisted Development': SiOpenai,
+  'Cursor': SiVisualstudiocode,
+  'GitHub Copilot': SiGithubcopilot,
+  'Azure AI SDK': SiMicrosoftazure,
+  'Prompt Engineering': SiOpenai,
 
   // Backend
-  'Node.js': 'https://cdn.simpleicons.org/nodedotjs/00D9FF',
-  'REST APIs': 'https://cdn.simpleicons.org/swagger/00D9FF',
-  'PostgreSQL': 'https://cdn.simpleicons.org/postgresql/00D9FF',
-  'Prisma ORM': 'https://cdn.simpleicons.org/prisma/00D9FF',
-  'API Integration': 'https://cdn.simpleicons.org/postman/00D9FF',
+  'Node.js': SiNodedotjs,
+  'REST APIs': SiSwagger,
+  'PostgreSQL': SiPostgresql,
+  'Prisma ORM': SiPrisma,
+  'API Integration': SiPostman,
 
   // Testing
-  'Jest': 'https://cdn.simpleicons.org/jest/00D9FF',
-  'React Testing Library': 'https://cdn.simpleicons.org/testinglibrary/00D9FF',
-  'Unit Testing': 'https://cdn.simpleicons.org/vitest/00D9FF',
-  'TDD': 'https://cdn.simpleicons.org/testinglibrary/00D9FF',
-  'Clean Code Practices': 'https://cdn.simpleicons.org/eslint/00D9FF',
+  'Jest': SiJest,
+  'React Testing Library': SiTestinglibrary,
+  'Unit Testing': SiVitest,
+  'TDD': SiTestinglibrary,
+  'Clean Code Practices': SiEslint,
 
   // Cloud & DevOps
-  'Azure': 'https://cdn.simpleicons.org/microsoftazure/00D9FF',
-  'GCP': 'https://cdn.simpleicons.org/googlecloud/00D9FF',
-  'Firebase': 'https://cdn.simpleicons.org/firebase/00D9FF',
-  'CI/CD Pipelines': 'https://cdn.simpleicons.org/githubactions/00D9FF',
-  'Service Workers': 'https://cdn.simpleicons.org/pwa/00D9FF',
-  'Docker': 'https://cdn.simpleicons.org/docker/00D9FF',
+  'Azure': SiMicrosoftazure,
+  'GCP': SiGooglecloud,
+  'Firebase': SiFirebase,
+  'CI/CD Pipelines': SiGithubactions,
+  'Service Workers': SiPwa,
+  'Docker': SiDocker,
 
   // Tools
-  'Git': 'https://cdn.simpleicons.org/git/00D9FF',
-  'Jira': 'https://cdn.simpleicons.org/jira/00D9FF',
-  'Postman': 'https://cdn.simpleicons.org/postman/00D9FF',
-  'VS Code': 'https://cdn.simpleicons.org/visualstudiocode/00D9FF',
-  'Agile/Scrum': 'https://cdn.simpleicons.org/jira/00D9FF',
+  'Git': SiGit,
+  'Jira': SiJira,
+  'Postman': SiPostman,
+  'VS Code': SiVisualstudiocode,
+  'Agile/Scrum': SiJira,
 
   // Fallback
-  'Default': 'https://cdn.simpleicons.org/starship/00D9FF'
+  'Default': SiReact
 };
 
 const getSkillIcon = (skillName: string) => {
@@ -187,11 +225,10 @@ export default function SolarSystem() {
                 >
                   <div className="relative bg-[#111111] border border-accent-cyan/40 rounded-full p-4 hover:border-accent-cyan hover:scale-110 transition-all duration-300 cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img
-                        src={getSkillIcon(skill.name)}
-                        alt={skill.name}
-                        className="w-8 h-8 object-contain"
-                      />
+                      {(() => {
+                        const Icon = getSkillIcon(skill.name);
+                        return <Icon className="w-8 h-8 text-accent-cyan" />;
+                      })()}
                     </div>
 
                     {/* Skill label */}
@@ -250,11 +287,10 @@ export default function SolarSystem() {
                 >
                   <div className="relative bg-[#111111] border border-border-accent rounded-full p-3 hover:border-accent-cyan/60 hover:scale-110 transition-all duration-300 cursor-pointer">
                     <div className="w-8 h-8 flex items-center justify-center">
-                      <img
-                        src={getSkillIcon(skill.name)}
-                        alt={skill.name}
-                        className="w-6 h-6 object-contain"
-                      />
+                      {(() => {
+                        const Icon = getSkillIcon(skill.name);
+                        return <Icon className="w-6 h-6 text-accent-cyan" />;
+                      })()}
                     </div>
 
                     {/* Skill label */}
