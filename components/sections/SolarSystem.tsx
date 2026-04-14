@@ -239,11 +239,11 @@ export default function SolarSystem() {
                   }}
                   className="group relative -translate-x-1/2 -translate-y-1/2"
                 >
-                  <div className="relative bg-[#0a0a0a]/80 border border-white/20 rounded-full p-5 hover:border-white/50 hover:bg-[#0a0a0a] transition-all duration-300 cursor-pointer backdrop-blur-sm">
-                    <div className="w-14 h-14 flex items-center justify-center">
+                  <div className="relative bg-[#0a0a0a]/60 border border-white/20 rounded-full p-3.5 hover:border-white/50 hover:bg-[#0a0a0a]/80 transition-all duration-300 cursor-pointer backdrop-blur-sm">
+                    <div className="w-10 h-10 flex items-center justify-center">
                       {(() => {
                         const Icon = getSkillIcon(skill.name);
-                        return <Icon className="w-10 h-10 text-white/90" />;
+                        return <Icon className="w-6 h-6 text-white/70" />;
                       })()}
                     </div>
 
@@ -298,11 +298,11 @@ export default function SolarSystem() {
                   }}
                   className="group relative -translate-x-1/2 -translate-y-1/2"
                 >
-                  <div className="relative bg-[#0a0a0a]/80 border border-white/20 rounded-full p-4 hover:border-white/50 hover:bg-[#0a0a0a] transition-all duration-300 cursor-pointer backdrop-blur-sm">
-                    <div className="w-10 h-10 flex items-center justify-center">
+                  <div className="relative bg-[#0a0a0a]/60 border border-white/20 rounded-full p-3 hover:border-white/50 hover:bg-[#0a0a0a]/80 transition-all duration-300 cursor-pointer backdrop-blur-sm">
+                    <div className="w-8 h-8 flex items-center justify-center">
                       {(() => {
                         const Icon = getSkillIcon(skill.name);
-                        return <Icon className="w-7 h-7 text-white/80" />;
+                        return <Icon className="w-5 h-5 text-white/60" />;
                       })()}
                     </div>
 
