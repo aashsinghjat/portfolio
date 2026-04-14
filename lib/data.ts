@@ -108,46 +108,67 @@ export const experience = [
 ];
 
 export const skills = [
-  // Frontend Frameworks (Primary)
-  { name: "Next.js", category: "primary" },
-  { name: "Vue.js", category: "primary" },
+  // Frontend - Core (Primary)
   { name: "React.js", category: "primary" },
-  { name: "Angular 2+", category: "primary" },
+  { name: "Next.js", category: "primary" },
   { name: "TypeScript", category: "primary" },
+  { name: "JavaScript (ES6+)", category: "primary" },
+  { name: "HTML5", category: "primary" },
+  { name: "CSS3", category: "primary" },
 
-  // State Management & Core
+  // Frontend - Styling & Design
+  { name: "SCSS", category: "secondary" },
+  { name: "Responsive Design", category: "secondary" },
+  { name: "Design Systems", category: "secondary" },
+  { name: "Accessibility (WCAG)", category: "secondary" },
+
+  // Advanced Frontend - Performance
+  { name: "Performance Optimization", category: "secondary" },
+  { name: "Core Web Vitals", category: "secondary" },
+  { name: "SSR/SSG", category: "secondary" },
+  { name: "Code Splitting", category: "secondary" },
+  { name: "Lazy Loading", category: "secondary" },
+  { name: "Bundle Optimization", category: "secondary" },
+
+  // State Management
   { name: "Redux", category: "secondary" },
+  { name: "Context API", category: "secondary" },
   { name: "Vuex", category: "secondary" },
-  { name: "JavaScript", category: "secondary" },
 
-  // Backend & Database
+  // AI & Modern Development
+  { name: "AI-assisted Development", category: "secondary" },
+  { name: "Cursor", category: "secondary" },
+  { name: "GitHub Copilot", category: "secondary" },
+  { name: "Azure AI SDK", category: "secondary" },
+  { name: "Prompt Engineering", category: "secondary" },
+
+  // Backend
   { name: "Node.js", category: "secondary" },
-  { name: "PostgreSQL", category: "secondary" },
-  { name: "Prisma", category: "secondary" },
   { name: "REST APIs", category: "secondary" },
+  { name: "PostgreSQL", category: "secondary" },
+  { name: "Prisma ORM", category: "secondary" },
+  { name: "API Integration", category: "secondary" },
 
-  // Testing & Quality
+  // Testing
   { name: "Jest", category: "secondary" },
-  { name: "90% Coverage", category: "secondary" },
+  { name: "React Testing Library", category: "secondary" },
+  { name: "Unit Testing", category: "secondary" },
+  { name: "TDD", category: "secondary" },
+  { name: "Clean Code Practices", category: "secondary" },
 
   // Cloud & DevOps
+  { name: "Azure", category: "secondary" },
   { name: "GCP", category: "secondary" },
   { name: "Firebase", category: "secondary" },
-  { name: "CI/CD", category: "secondary" },
-
-  // AI & Productivity
-  { name: "Cursor AI", category: "secondary" },
-  { name: "GitHub Copilot", category: "secondary" },
-
-  // UI & Styling
-  { name: "SCSS", category: "secondary" },
-  { name: "Tailwind", category: "secondary" },
-  { name: "Bootstrap", category: "secondary" },
-
-  // Specialized
-  { name: "PWA", category: "secondary" },
+  { name: "CI/CD Pipelines", category: "secondary" },
   { name: "Service Workers", category: "secondary" },
-  { name: "AEM", category: "secondary" },
+
+  // Tools
+  { name: "Git", category: "secondary" },
+  { name: "Jira", category: "secondary" },
+  { name: "Postman", category: "secondary" },
+  { name: "VS Code", category: "secondary" },
+  { name: "Agile/Scrum", category: "secondary" },
 ];
 
 export const testimonials = [
