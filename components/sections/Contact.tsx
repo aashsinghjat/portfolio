@@ -1,43 +1,31 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { personalInfo } from "@/lib/data";
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { personalInfo } from '@/lib/data';
 
 export default function Contact() {
   return (
-    <section className="max-w-5xl mx-auto py-24 px-6 text-center">
-      <motion.h2
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5 }}
-        className="text-3xl md:text-4xl font-semibold mb-4 tracking-tight text-gray-100"
-      >
-        Let&apos;s Connect
-      </motion.h2>
+    <section id="contact" className="max-w-[700px] mx-auto px-6 py-24 text-center scroll-mt-20">
+      <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
+        Let's Connect
+      </h2>
 
-      <motion.p
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-gray-400 mb-8 text-base md:text-lg"
-      >
+      <p className="text-foreground-secondary mb-8 text-sm md:text-base">
         Open to senior frontend roles in high-impact product companies.
-      </motion.p>
+      </p>
 
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="flex flex-col sm:flex-row justify-center gap-4"
+        transition={{ duration: 0.5 }}
+        className="flex flex-col sm:flex-row flex-wrap justify-center gap-4"
       >
         <Button
           size="lg"
+          className="rounded-full px-8 bg-foreground text-background hover:bg-foreground/90 hover:scale-103 transition-transform"
           asChild
-          className="rounded-full px-8 py-3 bg-white text-black font-medium shadow-xl hover:bg-gray-200 hover:scale-105 transition"
         >
           <a href={`mailto:${personalInfo.email}`}>Email Me</a>
         </Button>
@@ -45,8 +33,8 @@ export default function Contact() {
         <Button
           size="lg"
           variant="outline"
+          className="rounded-full px-8 border-border-accent text-foreground hover:bg-border-primary hover:scale-103 transition-transform"
           asChild
-          className="rounded-full px-8 py-3 bg-white/10 text-white border border-white/30 backdrop-blur hover:bg-white/20 hover:scale-105 transition"
         >
           <a
             href={personalInfo.linkedin}
@@ -60,8 +48,8 @@ export default function Contact() {
         <Button
           size="lg"
           variant="outline"
+          className="rounded-full px-8 border-border-accent text-foreground hover:bg-border-primary hover:scale-103 transition-transform"
           asChild
-          className="rounded-full px-8 py-3 bg-white/10 text-white border border-white/30 backdrop-blur hover:bg-white/20 hover:scale-105 transition"
         >
           <a
             href={personalInfo.github}
