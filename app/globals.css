@@ -34,27 +34,33 @@
 
 .custom-cursor {
   position: fixed;
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  width: 12px;
+  height: 12px;
+  background: rgb(0, 217, 255);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   transition: transform 0.15s ease-out;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 0 20px rgba(0, 217, 255, 0.8),
+    0 0 40px rgba(0, 217, 255, 0.4),
+    0 0 60px rgba(0, 217, 255, 0.2);
+  filter: blur(0.5px);
 }
 
 .custom-cursor-ring {
   position: fixed;
   width: 40px;
   height: 40px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 217, 255, 0.3);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9998;
   transition: transform 0.25s ease-out;
-  backdrop-filter: blur(2px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  box-shadow:
+    0 0 30px rgba(0, 217, 255, 0.3),
+    inset 0 0 20px rgba(0, 217, 255, 0.1);
 }
 
 /* Reduced motion support */
