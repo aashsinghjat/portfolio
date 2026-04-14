@@ -24,7 +24,8 @@ export default function Contact() {
       >
         <Button
           size="lg"
-          className="rounded-full px-8 bg-foreground text-background hover:bg-foreground/90 hover:scale-103 transition-transform"
+          variant="outline"
+          className="rounded-full px-8 border-accent-cyan text-foreground hover:bg-accent-cyan/10 hover:scale-103 transition-transform"
           asChild
         >
           <a href={`mailto:${personalInfo.email}`}>Email Me</a>
