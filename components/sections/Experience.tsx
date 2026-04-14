@@ -12,7 +12,7 @@ export default function Experience() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.5 }}
-        className="text-3xl md:text-4xl font-semibold mb-12 text-center tracking-tight text-accent-cyan"
+        className="text-3xl md:text-4xl font-semibold mb-12 text-center tracking-tight text-foreground"
       >
         Work Experience
       </motion.h2>
