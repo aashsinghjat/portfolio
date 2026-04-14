@@ -227,7 +227,7 @@ export default function SolarSystem() {
                     <div className="w-12 h-12 flex items-center justify-center">
                       {(() => {
                         const Icon = getSkillIcon(skill.name);
-                        return <Icon className="w-8 h-8 text-accent-cyan" />;
+                        return <Icon className="w-8 h-8 text-purple-400" />;
                       })()}
                     </div>
 
@@ -289,7 +289,7 @@ export default function SolarSystem() {
                     <div className="w-8 h-8 flex items-center justify-center">
                       {(() => {
                         const Icon = getSkillIcon(skill.name);
-                        return <Icon className="w-6 h-6 text-accent-cyan" />;
+                        return <Icon className="w-6 h-6 text-purple-400" />;
                       })()}
                     </div>
 
