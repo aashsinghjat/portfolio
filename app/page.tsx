@@ -48,7 +48,7 @@ export default function Home() {
       <Navigation />
 
       {/* Main content */}
-      <main className="relative z-100">
+      <main className="relative z-[100]">
         <Hero />
         <ProjectCarousel />
         <Experience />

@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section id="contact" className="max-w-[700px] mx-auto px-6 py-24 text-center scroll-mt-20">
       <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
-        Let's Connect
+        Let&apos;s Connect
       </h2>
 
       <p className="text-foreground-secondary mb-8 text-sm md:text-base">
