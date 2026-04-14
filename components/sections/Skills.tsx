@@ -1,43 +1,36 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { skills } from "@/lib/data";
+import { motion } from 'framer-motion';
+import { skills } from '@/lib/data';
 
 export default function Skills() {
   return (
-    <section className="max-w-5xl mx-auto py-20 px-6 text-center">
-      <motion.h2
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5 }}
-        className="text-3xl md:text-4xl font-semibold mb-10 tracking-tight text-gray-100"
-      >
+    <section id="skills" className="max-w-[900px] mx-auto px-6 py-24 scroll-mt-20">
+      <h2 className="text-sm uppercase tracking-wider text-foreground-tertiary text-center mb-12">
         Core Skills
-      </motion.h2>
+      </h2>
 
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.5 }}
         className="flex flex-wrap justify-center gap-3"
       >
         {skills.map((skill, i) => (
           <motion.span
             key={skill.name}
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.3, delay: i * 0.05 }}
-            whileHover={{ scale: 1.08 }}
-            className={`px-4 py-2 rounded-full text-sm transition-all cursor-default
-              ${
-                skill.category === "primary"
-                  ? "bg-white/15 border-2 border-white/30 text-white font-medium"
-                  : "bg-white/10 border border-white/20 text-gray-300"
+            transition={{ duration: 0.3, delay: i * 0.03 }}
+            className={`
+              px-4 md:px-5 py-2 md:py-2.5 rounded-full text-sm transition-all duration-200 cursor-default
+              hover:scale-105
+              ${skill.category === 'primary'
+                ? 'border-2 border-foreground text-foreground font-medium'
+                : 'border border-border-accent text-foreground-secondary'
               }
-              hover:bg-white/20 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]
             `}
           >
             {skill.name}
