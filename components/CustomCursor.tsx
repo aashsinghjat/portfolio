@@ -51,6 +51,7 @@ export default function CustomCursor() {
 
   // Smooth spring-like follow animation for the ring
   useEffect(() => {
+    // eslint-disable-next-line prefer-const
     let currentVelocity = { x: 0, y: 0 };
 
     const animateRing = () => {

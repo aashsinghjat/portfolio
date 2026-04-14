@@ -10,7 +10,6 @@ import {
   SiTypescript,
   SiJavascript,
   SiHtml5,
-  SiCss3,
   SiSass,
   SiTailwindcss,
   SiGooglechrome,
@@ -22,8 +21,6 @@ import {
   SiAngular,
   SiOpenai,
   SiGithubcopilot,
-  SiVisualstudiocode,
-  SiMicrosoftazure,
   SiNodedotjs,
   SiSwagger,
   SiPostgresql,
@@ -41,6 +38,7 @@ import {
   SiGit,
   SiJira,
 } from 'react-icons/si';
+import { FaCode, FaCloud, FaMicrosoft } from 'react-icons/fa';
 
 // Skill icon mapping - using react-icons
 const skillIcons: Record<string, IconType> = {
@@ -50,7 +48,7 @@ const skillIcons: Record<string, IconType> = {
   'TypeScript': SiTypescript,
   'JavaScript (ES6+)': SiJavascript,
   'HTML5': SiHtml5,
-  'CSS3': SiCss3,
+  'CSS3': FaCode,
 
   // Styling & Design
   'SCSS': SiSass,
@@ -76,9 +74,9 @@ const skillIcons: Record<string, IconType> = {
 
   // AI & Modern Dev
   'AI-assisted Development': SiOpenai,
-  'Cursor': SiVisualstudiocode,
+  'Cursor': FaCode,
   'GitHub Copilot': SiGithubcopilot,
-  'Azure AI SDK': SiMicrosoftazure,
+  'Azure AI SDK': FaCloud,
   'Prompt Engineering': SiOpenai,
 
   // Backend
@@ -96,7 +94,7 @@ const skillIcons: Record<string, IconType> = {
   'Clean Code Practices': SiEslint,
 
   // Cloud & DevOps
-  'Azure': SiMicrosoftazure,
+  'Azure': FaMicrosoft,
   'GCP': SiGooglecloud,
   'Firebase': SiFirebase,
   'CI/CD Pipelines': SiGithubactions,
@@ -107,7 +105,7 @@ const skillIcons: Record<string, IconType> = {
   'Git': SiGit,
   'Jira': SiJira,
   'Postman': SiPostman,
-  'VS Code': SiVisualstudiocode,
+  'VS Code': FaCode,
   'Agile/Scrum': SiJira,
 
   // Fallback

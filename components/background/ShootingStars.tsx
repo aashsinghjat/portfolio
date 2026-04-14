@@ -33,12 +33,13 @@ export default function ShootingStars() {
     const maxStars = 3;
 
     // Create shooting star
-    const createStar = () => {
-      if (!canvas) return;
+    const createStar = (): ShootingStar => {
+      const canvasWidth = canvas?.width || window.innerWidth;
+      const canvasHeight = canvas?.height || window.innerHeight;
 
       return {
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height * 0.5, // Start from upper half
+        x: Math.random() * canvasWidth,
+        y: Math.random() * canvasHeight * 0.5, // Start from upper half
         length: Math.random() * 80 + 60, // 60-140px trail
         speed: Math.random() * 3 + 4, // 4-7 speed
         opacity: Math.random() * 0.5 + 0.5,
