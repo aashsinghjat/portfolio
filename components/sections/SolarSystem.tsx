@@ -205,7 +205,7 @@ export default function SolarSystem() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           {primarySkills.map((skill, index) => {
             const angle = (index / primarySkills.length) * Math.PI * 2;
-            const radius = 220;
+            const radius = 280;
             const x = Math.cos(angle) * radius;
             const y = Math.sin(angle) * radius;
             const delay = index * 0.1;
@@ -267,7 +267,7 @@ export default function SolarSystem() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           {secondarySkills.map((skill, index) => {
             const angle = (index / secondarySkills.length) * Math.PI * 2;
-            const radius = 380;
+            const radius = 450;
             const x = Math.cos(angle) * radius;
             const y = Math.sin(angle) * radius;
             const delay = index * 0.08;
@@ -330,13 +330,13 @@ export default function SolarSystem() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.3 }}
           transition={{ delay: 0.5 }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[440px] h-[440px] border border-accent-cyan/10 rounded-full pointer-events-none"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[560px] h-[560px] border border-accent-cyan/10 rounded-full pointer-events-none"
         />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.2 }}
           transition={{ delay: 0.7 }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[760px] h-[760px] border border-accent-cyan/10 rounded-full pointer-events-none"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] border border-accent-cyan/10 rounded-full pointer-events-none"
         />
 
         {/* Scroll indicator */}
