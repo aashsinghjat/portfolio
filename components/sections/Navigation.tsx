@@ -5,8 +5,8 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full z-50 border-b border-border-primary bg-background/80 backdrop-blur-sm">
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
         {/* Left: Name */}
-        <div className="text-lg font-semibold text-foreground">
-          aash singh jat
+        <div className="text-lg font-bold tracking-wide text-foreground">
+          AASH SINGH JAT
         </div>
 
         {/* Right: Nav links - Hidden on mobile, visible on md+ */}

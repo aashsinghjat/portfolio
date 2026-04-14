@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Aash Singh Jat - Senior Frontend Developer",
-  description: "Senior Frontend Developer with 6+ years building scalable web applications. Expert in Next.js, Vue.js, React, TypeScript. Maersk, Deloitte, UN experience.",
+  description: "Senior Frontend Developer with 7+ years building scalable web applications. Expert in Next.js, Vue.js, React, TypeScript. Maersk, Deloitte, UN experience.",
   keywords: [
     "Frontend Developer",
     "Senior Frontend Engineer",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Aash Singh Jat - Senior Frontend Developer",
-    description: "Senior Frontend Developer | Next.js, Vue.js, React | 6+ years experience",
+    description: "Senior Frontend Developer | Next.js, Vue.js, React | 7+ years experience",
   },
   robots: {
     index: true,

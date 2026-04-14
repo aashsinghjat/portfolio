@@ -1,43 +1,58 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Card, CardContent } from '@/components/ui/card';
 import { experience } from '@/lib/data';
 
 export default function Experience() {
   return (
-    <section id="experience" className="max-w-[900px] mx-auto px-6 py-24 scroll-mt-20">
-      <h2 className="text-sm uppercase tracking-wider text-foreground-tertiary text-center mb-16">
+    <section id="experience" className="max-w-4xl mx-auto py-20 px-6 scroll-mt-20">
+      <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+        className="text-3xl md:text-4xl font-semibold mb-12 text-center tracking-tight text-foreground"
+      >
         Work Experience
-      </h2>
+      </motion.h2>
 
-      <div className="space-y-12">
-        {experience.map((exp, i) => (
-          <motion.div
-            key={exp.company}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="border-l-2 border-foreground pl-6 md:pl-8"
-          >
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-1">
-              <h3 className="text-xl font-semibold text-foreground">
-                {exp.company}
-              </h3>
-              <span className="text-sm text-foreground-tertiary">
-                {exp.period}
-              </span>
-            </div>
+      <div className="relative">
+        {/* Timeline Line */}
+        <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-foreground/20" />
 
-            <div className="text-foreground-secondary mb-3 text-sm md:text-base">
-              {exp.role}
-            </div>
+        {/* Experience Cards */}
+        <div className="space-y-12">
+          {experience.map((exp, i) => (
+            <motion.div
+              key={exp.company}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className={`flex items-center gap-6 ${
+                i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+              }`}
+            >
+              {/* Timeline Dot */}
+              <div className="hidden md:block flex-shrink-0 w-4 h-4 rounded-full bg-foreground border-4 border-background" />
 
-            <p className="text-foreground-secondary leading-relaxed text-sm md:text-base">
-              {exp.achievement}
-            </p>
-          </motion.div>
-        ))}
+              {/* Card */}
+              <Card className="flex-1 rounded-2xl bg-foreground/10 backdrop-blur-lg border border-foreground/20 hover:bg-foreground/15 transition">
+                <CardContent className="p-6">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                    <h3 className="text-xl font-semibold text-foreground">
+                      {exp.company}
+                    </h3>
+                    <span className="text-sm text-foreground-secondary">{exp.period}</span>
+                  </div>
+                  <p className="text-sm text-foreground-secondary mb-3">{exp.role}</p>
+                  <p className="text-foreground-secondary text-sm">{exp.achievement}</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

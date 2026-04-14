@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Aash Singh Jat",
   title: "Senior Frontend Developer",
-  tagline: "6+ years building scalable, high-performance web applications with Next.js, Vue.js, and React",
+  tagline: "7+ years building scalable, high-performance web applications with Next.js, Vue.js, and React",
   location: "Bangalore, India",
   phone: "+91 7000 770 464",
   email: "aashjat96@gmail.com",
@@ -12,7 +12,7 @@ export const personalInfo = {
 
 export const about = {
   description:
-    "Senior Frontend Developer with 6+ years of experience building scalable, high-performance web applications using Next.js, Vue.js, React.js, and Angular (2+). Strong expertise in TypeScript, JavaScript, and state management (Vuex, Redux). Experienced in Node.js, REST APIs, and PostgreSQL, enabling end-to-end delivery. Proficient in AI-assisted development tools such as Cursor and GitHub Copilot to improve productivity and code quality. Proven track record of achieving 90% test coverage, 95% customer satisfaction, and delivering mission-critical applications for organizations including Maersk, Deloitte, UN (FAO/ILO), and Toyota.",
+    "Senior Frontend Developer with 7+ years of experience building scalable, high-performance web applications using Next.js, Vue.js, React.js, and Angular (2+). Strong expertise in TypeScript, JavaScript, and state management (Vuex, Redux). Experienced in Node.js, REST APIs, and PostgreSQL, enabling end-to-end delivery. Proficient in AI-assisted development tools such as Cursor and GitHub Copilot to improve productivity and code quality. Proven track record of achieving 90% test coverage, 95% customer satisfaction, and delivering mission-critical applications for organizations including Maersk, Deloitte, UN (FAO/ILO), and Toyota.",
 };
 
 export const projects = [
