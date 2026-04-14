@@ -44,9 +44,9 @@ export default function Experience() {
                     <h3 className="text-xl font-semibold text-accent-cyan">
                       {exp.company}
                     </h3>
-                    <span className="text-sm text-accent-cyan/60">{exp.period}</span>
+                    <span className="text-sm text-foreground-secondary">{exp.period}</span>
                   </div>
-                  <p className="text-sm text-accent-cyan/80 mb-3 font-medium">{exp.role}</p>
+                  <p className="text-sm text-foreground-secondary mb-3">{exp.role}</p>
                   <p className="text-foreground-secondary text-sm">{exp.achievement}</p>
                 </CardContent>
               </Card>
