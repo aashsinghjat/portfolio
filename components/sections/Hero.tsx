@@ -12,9 +12,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-normal text-foreground mb-6 leading-tight"
+          className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6 leading-tight"
         >
-          {personalInfo.title}
+          <span className="text-foreground">Senior </span>
+          <span className="text-accent-cyan">Frontend</span>
+          <span className="text-foreground"> Developer</span>
         </motion.h1>
 
         <motion.p
@@ -23,7 +25,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg text-foreground-secondary leading-relaxed mb-8 max-w-[600px]"
         >
-          {personalInfo.tagline}
+          <span className="text-accent-cyan font-semibold">7+ years</span> building scalable, high-performance web applications with Next.js, Vue.js, and React
         </motion.p>
 
         <motion.div

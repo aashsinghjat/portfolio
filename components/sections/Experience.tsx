@@ -41,12 +41,12 @@ export default function Experience() {
               <Card className="flex-1 rounded-2xl bg-foreground/10 backdrop-blur-lg border border-foreground/20 hover:bg-foreground/15 transition">
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h3 className="text-xl font-semibold text-foreground">
+                    <h3 className="text-xl font-semibold text-accent-cyan">
                       {exp.company}
                     </h3>
                     <span className="text-sm text-foreground-secondary">{exp.period}</span>
                   </div>
-                  <p className="text-sm text-foreground-secondary mb-3">{exp.role}</p>
+                  <p className="text-sm text-accent-cyan/80 mb-3 font-medium">{exp.role}</p>
                   <p className="text-foreground-secondary text-sm">{exp.achievement}</p>
                 </CardContent>
               </Card>

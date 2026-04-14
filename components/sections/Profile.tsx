@@ -53,7 +53,7 @@ export default function Profile() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-xl text-foreground-secondary"
+              className="text-xl text-accent-cyan"
             >
               {personalInfo.title}
             </motion.p>

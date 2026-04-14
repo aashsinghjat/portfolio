@@ -46,7 +46,7 @@ export default function ProjectCarousel() {
             </div>
 
             {/* Project title */}
-            <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold text-accent-cyan mb-4">
               {currentProject.title}
             </h3>
 
