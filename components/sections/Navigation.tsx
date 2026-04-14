@@ -19,32 +19,37 @@ export default function Navigation() {
         {/* Right: Nav links - Hidden on mobile, visible on md+ */}
         <div className="hidden md:flex gap-8 text-sm font-semibold text-foreground-tertiary uppercase tracking-wide">
           <button
+            type="button"
             onClick={() => scrollToSection('projects')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer"
+            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             Projects
           </button>
           <button
+            type="button"
             onClick={() => scrollToSection('experience')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer"
+            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             Experience
           </button>
           <button
+            type="button"
             onClick={() => scrollToSection('profile')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer"
+            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             About
           </button>
           <button
+            type="button"
             onClick={() => scrollToSection('skills')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer"
+            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             Skills
           </button>
           <button
+            type="button"
             onClick={() => scrollToSection('contact')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer"
+            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             Contact
           </button>
@@ -53,8 +58,9 @@ export default function Navigation() {
         {/* Mobile: Show simplified version */}
         <div className="md:hidden text-sm font-semibold text-foreground-tertiary uppercase tracking-wide">
           <button
+            type="button"
             onClick={() => scrollToSection('contact')}
-            className="hover:text-foreground transition-colors cursor-pointer"
+            className="hover:text-foreground transition-colors cursor-pointer bg-transparent border-none p-0"
           >
             Contact
           </button>
