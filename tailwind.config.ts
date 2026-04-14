@@ -10,9 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "rgb(var(--background) / <alpha-value>)",
+        foreground: "rgb(var(--foreground) / <alpha-value>)",
+        "foreground-secondary": "rgb(var(--foreground-secondary) / <alpha-value>)",
+        "foreground-tertiary": "rgb(var(--foreground-tertiary) / <alpha-value>)",
+        "border-primary": "rgb(var(--border-primary) / <alpha-value>)",
+        "border-accent": "rgb(var(--border-accent) / <alpha-value>)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
