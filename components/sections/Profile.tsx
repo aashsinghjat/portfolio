@@ -22,7 +22,6 @@ export default function Profile() {
               alt={personalInfo.name}
               fill
               className="object-cover"
-              style={{ transform: 'rotate(90deg) scale(1.3)' }}
               priority
             />
           </div>

@@ -17,46 +17,46 @@ export default function Navigation() {
         </div>
 
         {/* Right: Nav links - Hidden on mobile, visible on md+ */}
-        <div className="hidden md:flex gap-8 text-sm text-foreground-tertiary">
+        <div className="hidden md:flex gap-8 text-sm font-semibold text-foreground-tertiary uppercase tracking-wide">
           <button
             onClick={() => scrollToSection('projects')}
             className="hover:text-foreground transition-colors duration-200 cursor-pointer"
           >
-            projects
+            Projects
           </button>
           <button
             onClick={() => scrollToSection('experience')}
             className="hover:text-foreground transition-colors duration-200 cursor-pointer"
           >
-            experience
+            Experience
           </button>
           <button
             onClick={() => scrollToSection('profile')}
             className="hover:text-foreground transition-colors duration-200 cursor-pointer"
           >
-            about
+            About
           </button>
           <button
             onClick={() => scrollToSection('skills')}
             className="hover:text-foreground transition-colors duration-200 cursor-pointer"
           >
-            skills
+            Skills
           </button>
           <button
             onClick={() => scrollToSection('contact')}
             className="hover:text-foreground transition-colors duration-200 cursor-pointer"
           >
-            contact
+            Contact
           </button>
         </div>
 
         {/* Mobile: Show simplified version */}
-        <div className="md:hidden text-sm text-foreground-tertiary">
+        <div className="md:hidden text-sm font-semibold text-foreground-tertiary uppercase tracking-wide">
           <button
             onClick={() => scrollToSection('contact')}
             className="hover:text-foreground transition-colors cursor-pointer"
           >
-            contact
+            Contact
           </button>
         </div>
       </div>
