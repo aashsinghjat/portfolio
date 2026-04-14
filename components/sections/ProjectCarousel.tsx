@@ -20,14 +20,6 @@ export default function ProjectCarousel() {
 
   const currentProject = projects[currentIndex];
 
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % projects.length);
-  };
-
   return (
     <section id="projects" className="max-w-[1200px] mx-auto px-6 py-24 scroll-mt-20">
       <h2 className="text-sm uppercase tracking-wider text-foreground-tertiary text-center mb-16">
@@ -39,28 +31,6 @@ export default function ProjectCarousel() {
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        {/* Left Arrow Button */}
-        <button
-          onClick={goToPrevious}
-          aria-label="Previous project"
-          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 w-10 h-10 rounded-full border-2 border-accent-cyan text-accent-cyan hover:bg-accent-cyan/10 hover:shadow-[0_0_20px_rgba(0,217,255,0.3)] transition-all flex items-center justify-center z-10"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
-        {/* Right Arrow Button */}
-        <button
-          onClick={goToNext}
-          aria-label="Next project"
-          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 w-10 h-10 rounded-full border-2 border-accent-cyan text-accent-cyan hover:bg-accent-cyan/10 hover:shadow-[0_0_20px_rgba(0,217,255,0.3)] transition-all flex items-center justify-center z-10"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
