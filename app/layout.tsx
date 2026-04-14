@@ -5,31 +5,37 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Aash Singh Jat - Senior Frontend Engineer",
-  description:
-    "Senior Frontend Engineer building scalable, high-performance web experiences. Featured work: Maersk InsightsHub, UN Digital Africa, Toyota E-commerce.",
+  title: "Aash Singh Jat - Senior Frontend Developer",
+  description: "Senior Frontend Developer with 6+ years building scalable web applications. Expert in Next.js, Vue.js, React, TypeScript. Maersk, Deloitte, UN experience.",
   keywords: [
-    "Frontend Engineer",
-    "React",
-    "Next.js",
+    "Frontend Developer",
+    "Senior Frontend Engineer",
+    "Next.js Developer",
+    "Vue.js Developer",
+    "React Developer",
     "TypeScript",
-    "Portfolio",
-    "Web Development",
+    "Full Stack Developer",
+    "Bangalore",
+    "Portfolio"
   ],
   authors: [{ name: "Aash Singh Jat" }],
   openGraph: {
     type: "website",
-    title: "Aash Singh Jat - Portfolio",
-    description:
-      "Senior Frontend Engineer specializing in React, Next.js, and high-scale applications",
-    url: "https://portfolio-aashsinghjat.vercel.app",
-    siteName: "Aash Singh Jat Portfolio",
+    locale: "en_US",
+    url: "https://aashsinghjat.vercel.app",
+    siteName: "Aash Singh Jat - Portfolio",
+    title: "Aash Singh Jat - Senior Frontend Developer",
+    description: "Senior Frontend Developer specializing in Next.js, Vue.js, and high-performance web applications",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aash Singh Jat - Portfolio",
-    description: "Senior Frontend Engineer",
+    title: "Aash Singh Jat - Senior Frontend Developer",
+    description: "Senior Frontend Developer | Next.js, Vue.js, React | 6+ years experience",
   },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
