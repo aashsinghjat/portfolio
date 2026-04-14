@@ -6,7 +6,7 @@ import { testimonials } from '@/lib/data';
 export default function Testimonials() {
   return (
     <section className="max-w-[800px] mx-auto px-6 py-24">
-      <h2 className="text-sm uppercase tracking-wider text-foreground-tertiary text-center mb-16">
+      <h2 className="text-sm uppercase tracking-wider text-accent-cyan/70 text-center mb-16 font-semibold">
         What People Say
       </h2>
 
@@ -32,8 +32,8 @@ export default function Testimonials() {
           <div className="font-semibold text-foreground mb-1">
             {testimonials[0].author}
           </div>
-          <div className="text-sm text-foreground-tertiary">
-            {testimonials[0].role} - {testimonials[0].company}
+          <div className="text-sm text-accent-cyan/70">
+            {testimonials[0].role} • {testimonials[0].company}
           </div>
         </div>
       </motion.div>
