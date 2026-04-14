@@ -17,13 +17,13 @@ const skillIcons: Record<string, string> = {
   // Styling & Design
   'SCSS': 'https://cdn.simpleicons.org/sass/00D9FF',
   'Tailwind CSS': 'https://cdn.simpleicons.org/tailwindcss/00D9FF',
-  'Responsive Design': 'https://cdn.simpleicons.org/responsive/00D9FF',
-  'Design Systems': 'https://cdn.simpleicons.org/figma/00D9FF',
-  'Accessibility (WCAG)': 'https://cdn.simpleicons.org/accessibility/00D9FF',
+  'Responsive Design': 'https://cdn.simpleicons.org/googlechrome/00D9FF',
+  'Design Systems': 'https://cdn.simpleicons.org/storybook/00D9FF',
+  'Accessibility (WCAG)': 'https://cdn.simpleicons.org/a11yproject/00D9FF',
 
   // Performance
   'Performance Optimization': 'https://cdn.simpleicons.org/lighthouse/00D9FF',
-  'Core Web Vitals': 'https://cdn.simpleicons.org/googlechrome/00D9FF',
+  'Core Web Vitals': 'https://cdn.simpleicons.org/pagespeedinsights/00D9FF',
   'SSR/SSG': 'https://cdn.simpleicons.org/nextdotjs/00D9FF',
   'Code Splitting': 'https://cdn.simpleicons.org/webpack/00D9FF',
   'Lazy Loading': 'https://cdn.simpleicons.org/webpack/00D9FF',
@@ -38,14 +38,14 @@ const skillIcons: Record<string, string> = {
 
   // AI & Modern Dev
   'AI-assisted Development': 'https://cdn.simpleicons.org/openai/00D9FF',
-  'Cursor': 'https://cdn.simpleicons.org/cursor/00D9FF',
+  'Cursor': 'https://cdn.simpleicons.org/visualstudiocode/00D9FF',
   'GitHub Copilot': 'https://cdn.simpleicons.org/githubcopilot/00D9FF',
   'Azure AI SDK': 'https://cdn.simpleicons.org/microsoftazure/00D9FF',
-  'Prompt Engineering': 'https://cdn.simpleicons.org/chatbot/00D9FF',
+  'Prompt Engineering': 'https://cdn.simpleicons.org/openai/00D9FF',
 
   // Backend
   'Node.js': 'https://cdn.simpleicons.org/nodedotjs/00D9FF',
-  'REST APIs': 'https://cdn.simpleicons.org/fastapi/00D9FF',
+  'REST APIs': 'https://cdn.simpleicons.org/swagger/00D9FF',
   'PostgreSQL': 'https://cdn.simpleicons.org/postgresql/00D9FF',
   'Prisma ORM': 'https://cdn.simpleicons.org/prisma/00D9FF',
   'API Integration': 'https://cdn.simpleicons.org/postman/00D9FF',
@@ -53,7 +53,7 @@ const skillIcons: Record<string, string> = {
   // Testing
   'Jest': 'https://cdn.simpleicons.org/jest/00D9FF',
   'React Testing Library': 'https://cdn.simpleicons.org/testinglibrary/00D9FF',
-  'Unit Testing': 'https://cdn.simpleicons.org/jest/00D9FF',
+  'Unit Testing': 'https://cdn.simpleicons.org/vitest/00D9FF',
   'TDD': 'https://cdn.simpleicons.org/testinglibrary/00D9FF',
   'Clean Code Practices': 'https://cdn.simpleicons.org/eslint/00D9FF',
 
@@ -70,10 +70,10 @@ const skillIcons: Record<string, string> = {
   'Jira': 'https://cdn.simpleicons.org/jira/00D9FF',
   'Postman': 'https://cdn.simpleicons.org/postman/00D9FF',
   'VS Code': 'https://cdn.simpleicons.org/visualstudiocode/00D9FF',
-  'Agile/Scrum': 'https://cdn.simpleicons.org/scrumalliance/00D9FF',
+  'Agile/Scrum': 'https://cdn.simpleicons.org/jira/00D9FF',
 
   // Fallback
-  'Default': 'https://cdn.simpleicons.org/sparkles/00D9FF'
+  'Default': 'https://cdn.simpleicons.org/starship/00D9FF'
 };
 
 const getSkillIcon = (skillName: string) => {
