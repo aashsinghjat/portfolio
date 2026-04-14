@@ -239,7 +239,7 @@ export default function SolarSystem() {
                   }}
                   className="group relative -translate-x-1/2 -translate-y-1/2"
                 >
-                  <div className="relative bg-[#0a0a0a]/80 border border-white/10 rounded-full p-5 hover:border-white/30 hover:bg-[#0a0a0a] transition-all duration-300 cursor-pointer backdrop-blur-sm">
+                  <div className="relative bg-[#0a0a0a]/80 border border-white/20 rounded-full p-5 hover:border-white/50 hover:bg-[#0a0a0a] transition-all duration-300 cursor-pointer backdrop-blur-sm">
                     <div className="w-14 h-14 flex items-center justify-center">
                       {(() => {
                         const Icon = getSkillIcon(skill.name);
@@ -298,7 +298,7 @@ export default function SolarSystem() {
                   }}
                   className="group relative -translate-x-1/2 -translate-y-1/2"
                 >
-                  <div className="relative bg-[#0a0a0a]/80 border border-white/10 rounded-full p-4 hover:border-white/30 hover:bg-[#0a0a0a] transition-all duration-300 cursor-pointer backdrop-blur-sm">
+                  <div className="relative bg-[#0a0a0a]/80 border border-white/20 rounded-full p-4 hover:border-white/50 hover:bg-[#0a0a0a] transition-all duration-300 cursor-pointer backdrop-blur-sm">
                     <div className="w-10 h-10 flex items-center justify-center">
                       {(() => {
                         const Icon = getSkillIcon(skill.name);
