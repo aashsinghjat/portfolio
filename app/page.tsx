@@ -6,6 +6,9 @@ import MouseGradient from "@/components/background/MouseGradient";
 import ParticleSystem from "@/components/background/ParticleSystem";
 import GrainOverlay from "@/components/background/GrainOverlay";
 
+// UI components
+import CustomCursor from "@/components/CustomCursor";
+
 // Section components
 import Navigation from "@/components/sections/Navigation";
 import Hero from "@/components/sections/Hero";
@@ -37,6 +40,9 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+
+      {/* Custom Cursor */}
+      <CustomCursor />
 
       {/* Background layers */}
       <AnimatedMesh />
