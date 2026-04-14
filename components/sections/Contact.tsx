@@ -33,7 +33,7 @@ export default function Contact() {
         <Button
           size="lg"
           variant="outline"
-          className="rounded-full px-8 border-border-accent text-foreground hover:bg-border-primary hover:scale-103 transition-transform"
+          className="rounded-full px-8 border-accent-cyan text-foreground hover:bg-accent-cyan/10 hover:scale-103 transition-transform"
           asChild
         >
           <a
@@ -48,7 +48,7 @@ export default function Contact() {
         <Button
           size="lg"
           variant="outline"
-          className="rounded-full px-8 border-border-accent text-foreground hover:bg-border-primary hover:scale-103 transition-transform"
+          className="rounded-full px-8 border-accent-cyan text-foreground hover:bg-accent-cyan/10 hover:scale-103 transition-transform"
           asChild
         >
           <a

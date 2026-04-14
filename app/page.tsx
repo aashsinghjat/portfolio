@@ -5,6 +5,7 @@ import AnimatedMesh from "@/components/background/AnimatedMesh";
 import MouseGradient from "@/components/background/MouseGradient";
 import ParticleSystem from "@/components/background/ParticleSystem";
 import BubbleEffect from "@/components/background/BubbleEffect";
+import ShootingStars from "@/components/background/ShootingStars";
 import GrainOverlay from "@/components/background/GrainOverlay";
 
 // UI components
@@ -50,6 +51,7 @@ export default function Home() {
       <MouseGradient />
       <ParticleSystem />
       <BubbleEffect />
+      <ShootingStars />
       <GrainOverlay />
 
       {/* Navigation */}
