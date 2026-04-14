@@ -135,8 +135,24 @@ export default function SolarSystem() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  // Select only the most important skills
   const primarySkills = skills.filter(s => s.category === 'primary');
-  const secondarySkills = skills.filter(s => s.category === 'secondary').slice(0, 12);
+
+  // Handpick important secondary skills
+  const importantSecondarySkills = [
+    'Node.js',
+    'PostgreSQL',
+    'Redux',
+    'Jest',
+    'Azure',
+    'Git',
+    'Performance Optimization',
+    'AI-assisted Development'
+  ];
+
+  const secondarySkills = skills.filter(s =>
+    s.category === 'secondary' && importantSecondarySkills.includes(s.name)
+  );
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 pt-20 overflow-hidden">
