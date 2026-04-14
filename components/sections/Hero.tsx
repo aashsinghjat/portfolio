@@ -21,9 +21,15 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg text-foreground-secondary leading-relaxed mb-8 max-w-[600px]"
+          className="text-lg leading-relaxed mb-8 max-w-[600px]"
         >
-          <span className="text-accent-cyan font-semibold">7+ years</span> building scalable, high-performance web applications with Next.js, Vue.js, and React
+          <span className="text-accent-cyan font-bold">7+ years</span>{" "}
+          <span className="text-foreground-secondary">building scalable, high-performance web applications with</span>{" "}
+          <span className="text-accent-cyan">Next.js</span>
+          <span className="text-foreground-secondary">,</span>{" "}
+          <span className="text-accent-cyan">Vue.js</span>
+          <span className="text-foreground-secondary">, and</span>{" "}
+          <span className="text-accent-cyan">React</span>
         </motion.p>
 
         <motion.div

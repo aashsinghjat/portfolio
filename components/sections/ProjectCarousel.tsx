@@ -41,12 +41,12 @@ export default function ProjectCarousel() {
             className="bg-[#111111] border border-border-primary rounded-lg p-8 md:p-12"
           >
             {/* Company label */}
-            <div className="text-xs uppercase tracking-wider text-accent-cyan/70 mb-3 font-semibold">
+            <div className="text-xs uppercase tracking-wider text-accent-cyan mb-3 font-bold">
               {currentProject.company}
             </div>
 
             {/* Project title */}
-            <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold text-accent-cyan mb-4">
               {currentProject.title}
             </h3>
 
@@ -56,7 +56,7 @@ export default function ProjectCarousel() {
             </p>
 
             {/* Impact metrics */}
-            <div className="text-sm text-accent-cyan/80 font-medium mb-6">
+            <div className="text-sm text-accent-cyan font-semibold mb-6">
               {currentProject.impact}
             </div>
 
@@ -65,7 +65,7 @@ export default function ProjectCarousel() {
               {currentProject.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="border border-accent-cyan/30 px-3 py-1 rounded text-sm text-accent-cyan/70 hover:border-accent-cyan/50 hover:text-accent-cyan transition-colors"
+                  className="border border-accent-cyan/40 px-3 py-1 rounded text-sm text-accent-cyan hover:border-accent-cyan hover:bg-accent-cyan/10 transition-colors"
                 >
                   {tag}
                 </span>
