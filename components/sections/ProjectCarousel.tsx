@@ -43,9 +43,9 @@ export default function ProjectCarousel() {
         <button
           onClick={goToPrevious}
           aria-label="Previous project"
-          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 w-10 h-10 rounded-full border-2 border-accent-cyan text-accent-cyan hover:bg-accent-cyan/10 hover:shadow-[0_0_20px_rgba(0,217,255,0.3)] transition-all flex items-center justify-center z-10"
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 text-accent-cyan/40 hover:text-accent-cyan transition-all flex items-center justify-center z-10 group"
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 group-hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.6)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
@@ -54,9 +54,9 @@ export default function ProjectCarousel() {
         <button
           onClick={goToNext}
           aria-label="Next project"
-          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 w-10 h-10 rounded-full border-2 border-accent-cyan text-accent-cyan hover:bg-accent-cyan/10 hover:shadow-[0_0_20px_rgba(0,217,255,0.3)] transition-all flex items-center justify-center z-10"
+          className="absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 text-accent-cyan/40 hover:text-accent-cyan transition-all flex items-center justify-center z-10 group"
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 group-hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.6)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
