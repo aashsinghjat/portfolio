@@ -34,7 +34,7 @@ export default function Hero() {
         >
           <Button
             size="lg"
-            className="rounded-full px-8 bg-foreground text-background hover:bg-foreground/90"
+            className="rounded-full px-8 bg-accent-cyan text-background hover:bg-accent-cyan/90 hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all"
             asChild
           >
             <a href="#projects">View Projects</a>
@@ -42,7 +42,7 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="rounded-full px-8 border-border-accent text-foreground hover:bg-border-primary"
+            className="rounded-full px-8 border-accent-cyan/50 text-foreground hover:bg-accent-cyan/10 hover:border-accent-cyan transition-all"
             asChild
           >
             <a href={personalInfo.resumePath} download>

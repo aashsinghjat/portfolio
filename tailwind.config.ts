@@ -16,6 +16,7 @@ const config: Config = {
         "foreground-tertiary": "rgb(var(--foreground-tertiary) / <alpha-value>)",
         "border-primary": "rgb(var(--border-primary) / <alpha-value>)",
         "border-accent": "rgb(var(--border-accent) / <alpha-value>)",
+        "accent-cyan": "rgb(0 217 255 / <alpha-value>)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

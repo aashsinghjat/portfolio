@@ -1,0 +1,102 @@
+<h2>Color Scheme: Dark vs Light</h2>
+<p class="subtitle">The reference site uses light colors. Which direction do you prefer?</p>
+
+<div class="options">
+  <div class="option" data-choice="light" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Light Minimalism (Match ayushcmd.me exactly)</h3>
+      <div class="mockup" style="margin-top: 1rem; background: #fafafa; padding: 2.5rem; font-size: 0.9em; border: 1px solid #e0e0e0;">
+        <div style="display: flex; justify-content: space-between; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0;">
+          <div style="font-weight: 600; color: #1a1a1a;">aash singh jat</div>
+          <div style="display: flex; gap: 2rem; font-size: 0.95em; color: #666;">
+            <span>projects</span>
+            <span>experience</span>
+            <span>contact</span>
+          </div>
+        </div>
+        <div style="margin-top: 4rem;">
+          <h1 style="font-size: 2.5em; font-weight: 400; line-height: 1.2; margin: 0; color: #1a1a1a;">Senior Frontend Developer</h1>
+          <p style="margin-top: 1.5rem; color: #666; line-height: 1.6; max-width: 600px;">6+ years building scalable, high-performance web applications</p>
+        </div>
+        <div style="margin-top: 4rem; background: #fff; border: 1px solid #e0e0e0; padding: 2rem; border-radius: 4px; max-width: 600px;">
+          <div style="font-size: 0.85rem; color: #999; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;">MAERSK</div>
+          <h3 style="margin: 0; font-weight: 600; color: #1a1a1a; font-size: 1.5rem;">InsightsHub</h3>
+          <p style="color: #666; margin-top: 1rem; line-height: 1.6;">Led migration of UI component library serving 350+ teams</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: #f0f0f0; padding: 0.3rem 0.75rem; border-radius: 4px; font-size: 0.8em; color: #555;">Next.js</span>
+            <span style="background: #f0f0f0; padding: 0.3rem 0.75rem; border-radius: 4px; font-size: 0.8em; color: #555;">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="pros-cons" style="margin-top: 1rem;">
+        <div class="pros">
+          <h4>Pros</h4>
+          <ul>
+            <li>Matches reference exactly</li>
+            <li>Better text readability</li>
+            <li>Professional, approachable</li>
+            <li>Print-friendly</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Cons</h4>
+          <ul>
+            <li>Less "tech/developer" vibe</li>
+            <li>Not what you chose initially</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="dark" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Dark Theme + ayushcmd.me Typography</h3>
+      <div class="mockup" style="margin-top: 1rem; background: #0a0a0a; color: #e0e0e0; padding: 2.5rem; font-size: 0.9em; border: 1px solid #1a1a1a;">
+        <div style="display: flex; justify-content: space-between; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
+          <div style="font-weight: 600; color: #fff;">aash singh jat</div>
+          <div style="display: flex; gap: 2rem; font-size: 0.95em; color: #999;">
+            <span>projects</span>
+            <span>experience</span>
+            <span>contact</span>
+          </div>
+        </div>
+        <div style="margin-top: 4rem;">
+          <h1 style="font-size: 2.5em; font-weight: 400; line-height: 1.2; margin: 0; color: #fff;">Senior Frontend Developer</h1>
+          <p style="margin-top: 1.5rem; color: #999; line-height: 1.6; max-width: 600px;">6+ years building scalable, high-performance web applications</p>
+        </div>
+        <div style="margin-top: 4rem; background: #111; border: 1px solid #2a2a2a; padding: 2rem; border-radius: 4px; max-width: 600px;">
+          <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;">MAERSK</div>
+          <h3 style="margin: 0; font-weight: 600; color: #fff; font-size: 1.5rem;">InsightsHub</h3>
+          <p style="color: #999; margin-top: 1rem; line-height: 1.6;">Led migration of UI component library serving 350+ teams</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: #1a1a1a; padding: 0.3rem 0.75rem; border-radius: 4px; font-size: 0.8em; color: #aaa; border: 1px solid #333;">Next.js</span>
+            <span style="background: #1a1a1a; padding: 0.3rem 0.75rem; border-radius: 4px; font-size: 0.8em; color: #aaa; border: 1px solid #333;">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="pros-cons" style="margin-top: 1rem;">
+        <div class="pros">
+          <h4>Pros</h4>
+          <ul>
+            <li>Keeps dark theme you chose</li>
+            <li>Developer-focused aesthetic</li>
+            <li>Uses ayushcmd.me spacing/typography</li>
+            <li>Modern, tech-forward</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Cons</h4>
+          <ul>
+            <li>Doesn't match reference exactly</li>
+            <li>Slightly harder to read long text</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p style="margin-top: 2rem; color: #666; font-size: 0.95em;">Both use the same typography system (font sizes, weights, spacing) from ayushcmd.me—the only difference is the color scheme.</p>

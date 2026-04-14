@@ -28,8 +28,8 @@ export default function Skills() {
               px-4 md:px-5 py-2 md:py-2.5 rounded-full text-sm transition-all duration-200 cursor-default
               hover:scale-105
               ${skill.category === 'primary'
-                ? 'border-2 border-foreground text-foreground font-medium'
-                : 'border border-border-accent text-foreground-secondary'
+                ? 'border-2 border-accent-cyan text-accent-cyan font-medium hover:bg-accent-cyan/10 hover:shadow-[0_0_15px_rgba(0,217,255,0.3)]'
+                : 'border border-border-accent text-foreground-secondary hover:border-accent-cyan/50'
               }
             `}
           >

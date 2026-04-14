@@ -80,7 +80,7 @@ export default function ProjectCarousel() {
                   onClick={() => setCurrentIndex(i)}
                   aria-label={`Go to project ${i + 1}`}
                   className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                    i === currentIndex ? 'bg-foreground scale-125' : 'bg-border-accent'
+                    i === currentIndex ? 'bg-accent-cyan scale-125 shadow-[0_0_10px_rgba(0,217,255,0.5)]' : 'bg-border-accent hover:bg-accent-cyan/50'
                   }`}
                 />
               ))}

@@ -21,35 +21,35 @@ export default function Navigation() {
           <button
             type="button"
             onClick={() => scrollToSection('projects')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
+            className="hover:text-accent-cyan transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             Projects
           </button>
           <button
             type="button"
             onClick={() => scrollToSection('experience')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
+            className="hover:text-accent-cyan transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             Experience
           </button>
           <button
             type="button"
             onClick={() => scrollToSection('profile')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
+            className="hover:text-accent-cyan transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             About
           </button>
           <button
             type="button"
             onClick={() => scrollToSection('skills')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
+            className="hover:text-accent-cyan transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             Skills
           </button>
           <button
             type="button"
             onClick={() => scrollToSection('contact')}
-            className="hover:text-foreground transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
+            className="hover:text-accent-cyan transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
           >
             Contact
           </button>
@@ -60,7 +60,7 @@ export default function Navigation() {
           <button
             type="button"
             onClick={() => scrollToSection('contact')}
-            className="hover:text-foreground transition-colors cursor-pointer bg-transparent border-none p-0"
+            className="hover:text-accent-cyan transition-colors cursor-pointer bg-transparent border-none p-0"
           >
             Contact
           </button>
