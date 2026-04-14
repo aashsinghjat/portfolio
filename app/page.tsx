@@ -13,7 +13,7 @@ import CustomCursor from "@/components/CustomCursor";
 
 // Section components
 import Navigation from "@/components/sections/Navigation";
-import Hero from "@/components/sections/Hero";
+import SolarSystem from "@/components/sections/SolarSystem";
 import ProjectCarousel from "@/components/sections/ProjectCarousel";
 import Experience from "@/components/sections/Experience";
 import Testimonials from "@/components/sections/Testimonials";
@@ -59,7 +59,7 @@ export default function Home() {
 
       {/* Main content */}
       <main className="relative z-10">
-        <Hero />
+        <SolarSystem />
         <ProjectCarousel />
         <Experience />
         <Testimonials />
