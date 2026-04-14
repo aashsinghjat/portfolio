@@ -4,6 +4,7 @@ import { personalInfo } from "@/lib/data";
 import AnimatedMesh from "@/components/background/AnimatedMesh";
 import MouseGradient from "@/components/background/MouseGradient";
 import ParticleSystem from "@/components/background/ParticleSystem";
+import BubbleEffect from "@/components/background/BubbleEffect";
 import GrainOverlay from "@/components/background/GrainOverlay";
 
 // UI components
@@ -48,6 +49,7 @@ export default function Home() {
       <AnimatedMesh />
       <MouseGradient />
       <ParticleSystem />
+      <BubbleEffect />
       <GrainOverlay />
 
       {/* Navigation */}
