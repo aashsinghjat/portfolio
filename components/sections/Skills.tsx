@@ -6,7 +6,7 @@ import { skills } from '@/lib/data';
 export default function Skills() {
   return (
     <section id="skills" className="max-w-[900px] mx-auto px-6 py-24 scroll-mt-20">
-      <h2 className="text-sm uppercase tracking-wider text-foreground-tertiary text-center mb-12">
+      <h2 className="text-sm uppercase tracking-wider text-accent-cyan/70 text-center mb-12 font-semibold">
         Core Skills
       </h2>
 

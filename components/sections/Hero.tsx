@@ -34,7 +34,8 @@ export default function Hero() {
         >
           <Button
             size="lg"
-            className="rounded-full px-8 bg-accent-cyan text-background hover:bg-accent-cyan/90 hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all"
+            variant="outline"
+            className="rounded-full px-8 border-accent-cyan text-accent-cyan hover:bg-accent-cyan/10 hover:shadow-[0_0_20px_rgba(0,217,255,0.3)] transition-all"
             asChild
           >
             <a href="#projects">View Projects</a>
